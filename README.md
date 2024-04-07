@@ -92,10 +92,12 @@ https_proxy=http://127.0.0.1:7890
 - 如果需要对Clash配置进行修改，请修改 `conf/config.yaml` 文件。然后运行 `restart.sh` 脚本进行重启。
 
 - 如果需要从tomlink解析自定义格式的数据，则进行如下操作：
+  ```
   1、进入到dev目录，打开文件subscribe2proxies.sh修改curl "自定义链接"；
   2、执行脚本sh subscribe2proxies.sh，会重新修改config.yaml文件；
   3、复制dev目录下新的文件覆盖配置：cp dev/config.yaml config/config.yaml；
   4、然后运行`restart.sh` 脚本进行重启；
+   ```
 
 > **注意：**
 > 重启脚本 `restart.sh` 不会更新订阅信息。
